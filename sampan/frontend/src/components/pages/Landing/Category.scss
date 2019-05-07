@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Nanum+Gothic');
+
+.col-no-pad {
+  padding: 0% !important;
+
+  .card2 {
+    position: relative;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0px solid;
+    border-radius: .25rem;
+    overflow: hidden;
+    min-height: 200px;
+    top: 0;
+    transition: top ease 0.5s;
+    box-shadow: 0 5px 5px 1px rgba(10, 10, 10, .05);
+
+    img {
+      object-fit: cover
+    }
+
+    &:hover {
+      top: -10px;
+      box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18),
+        0 4px 15px 0 rgba(0, 0, 0, .15) !important;
+    }
+
+    .card-themes {
+      &-dark {
+        background-color: rgba(0, 0, 0, 0.5);
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: 100 !important;
+        position: absolute;
+        color: #fff;
+        bottom: 1rem;
+        width: 100%;
+        z-index: 2;
+        padding: 1.2rem;
+      }
+
+      &-light {
+        background-color: rgba(255, 255, 255, 0.596);
+        font-family: 'Nanum Gothic', sans-serif;
+        color: black;
+        position: absolute;
+        bottom: 1rem;
+        width: 100%;
+        z-index: 2;
+        padding: 1.2rem;
+      }
+    }
+  }
+}

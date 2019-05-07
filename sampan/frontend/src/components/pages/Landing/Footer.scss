@@ -1,0 +1,15 @@
+.bg-color {
+  background-color: #5a5a5a;
+  color: white;
+
+  &-dark {
+      background-color: #3b3b3b;
+      color: white;
+  }
+}
+
+.icon-fab {
+  &:hover {
+      color: #28A745;
+  }
+}

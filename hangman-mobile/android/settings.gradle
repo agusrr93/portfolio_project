@@ -1,0 +1,3 @@
+rootProject.name = 'hang_man'
+
+include ':app'

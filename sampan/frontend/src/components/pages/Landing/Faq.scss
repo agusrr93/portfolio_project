@@ -1,0 +1,28 @@
+.faq-bg {
+  background-image: url('https://images.pexels.com/photos/936006/pexels-photo-936006.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f8f8f8;
+  overflow: hidden;
+
+  .overlay {
+    background-image:
+    /* top, transparent red */ linear-gradient(
+    to bottom right,
+    rgba(1, 148, 38, 0.616),
+    rgba(3, 48, 194, 0.685)
+  );
+  }
+}
+
+.teks h4 {
+  font-weight: 400;
+  font-size: 250%;
+}
+
+.teks p {
+  font-weight: 350;
+  font-size: 150%;
+}

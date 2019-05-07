@@ -1,0 +1,35 @@
+.card-title {
+	font-size: 50px !important;
+}
+
+.canvasjs-chart-credit {
+	display: none !important;
+}
+
+.total-card {
+	&0 {
+		background-color: #67b26f !important;
+	}
+	&1 {
+		background-color: #0a483d !important;
+	}
+	&2 {
+		background-color: #3a6186 !important;
+	}
+	&3 {
+		background-color: #1d4350 !important;
+	}
+	&4 {
+		background-color: #bd3a68 !important;
+	}
+	&5 {
+		background-color: #1976d3 !important;
+	}
+}
+
+.icons-card {
+	background-color: #cecece50;
+	border-radius: 150px;
+	color: #f5f5f5;
+	padding: 10px;
+}

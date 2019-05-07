@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/94199/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
+    <title>Happy-o-Mapper</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container text-center" style="margin: 20px auto">
+      <h1>WORLD HAPPINESS INDEX</h1>
+    </div>
+
+    <p style="position: absolute; bottom: 15%; left: 2%">
+      <button class="ui red button" type="button" onclick="data(2015)">2015</button>
+      <button class="ui red button" type="button" onclick="data(2016)">2016</button>
+    </p>
+    <p style="position: absolute; bottom: 5%; left: 2%"><span>Low</span><img src="/set-5-faces.png" width="200" height="80"/><span>High</span></p>
+    
+    <div id="map"></div>
+
+    <div class="container text-center">
+      <p>Hacktiv8 D3.js Project</p>
+    </div>
+
+    <div id="tooltip" class="hidden">
+      <p>Name: <span id="name"></span></p>
+      <p>Region: <span id="region"></span></p>
+      <p>Happiness Score: <span id="score"></span></p>
+      <p>Happiness Rank: <span id="rank"></span></p>
+    </div>
+
+    <div class="ui segment" id="opmodal">
+      <img id="img"/>
+      <p>Name: <span id="name"></span></p>
+      <p>Region: <span id="region"></span></p>
+      <p>Happiness Score: <span id="score"></span></p>
+      <p>Happiness Rank: <span id="rank"></span></p>
+      <p>Economy (GDP): <span id="economy"></span></p>
+      <p>Life expectancy: <span id="life"></span></p>
+      <p>Freedom: <span id="freedom"></span></p>
+      <p>Generosity: <span id="generosity"></span></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+    <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.nav-item {
+    font-weight: 400 !important;
+    color: #cecece;
+
+    &.active {
+        font-weight: 500 !important;
+
+        .nav-link {
+            color: #2CBB26 !important;
+            background-color: transparent !important
+        }
+    }
+}
